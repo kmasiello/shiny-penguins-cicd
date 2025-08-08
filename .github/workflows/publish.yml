@@ -15,7 +15,8 @@
           with:
             r-version: 4.4.1
             use-public-rspm: true
-
+        - run: Rscript -e 'options(renv.config.pak.enabled = TRUE)'
+        
         - uses: r-lib/actions/setup-renv@v2
 
         - name: Create manifest.json

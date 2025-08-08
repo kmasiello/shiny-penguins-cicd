@@ -4,6 +4,7 @@ library(ggplot2)
 library(dplyr)
 library(palmerpenguins)
 library(rsconnect)
+library(pak)
 
 # Dashboard body
 body <- shinydashboard::dashboardBody(

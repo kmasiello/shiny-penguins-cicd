@@ -553,6 +553,18 @@
       ],
       "Hash": "55ddd2d4a1959535f18393478b0c14a6"
     },
+    "pak": {
+      "Package": "pak",
+      "Version": "0.9.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": [
+        "R",
+        "tools",
+        "utils"
+      ],
+      "Hash": "e4d8ebf0ea80af486caf4209c924ddf9"
+    },
     "palmerpenguins": {
       "Package": "palmerpenguins",
       "Version": "0.1.1",
