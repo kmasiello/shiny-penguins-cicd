@@ -20,16 +20,13 @@
 
         - uses: r-lib/actions/setup-renv@v2
                         
-        - name: Create manifest.json
-          shell: Rscript {0}
-          run: |
-            rsconnect::writeManifest()
-            
         - name: Publish Connect content
           uses: rstudio/actions/connect-publish@main
           with:
             url: ${{ secrets.CONNECT_SERVER }}
             api-key: ${{ secrets.CONNECT_API_KEY }}
-            access-type: logged_in
+            access-type: acl
             dir: |
-              .:/shiny-app-demo-cicd-github-actions
+              .:shiny-penguins            
+
+        
